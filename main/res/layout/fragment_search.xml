@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.ra.ayushma.SearchFragment"
+    android:padding="24dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etDrLoc"
+        android:hint="Location"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/et_bg"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etDrSpec"
+        android:hint="Specialization"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/et_bg"/>
+
+    <Button
+        android:text="SEARCH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bSearch"
+        android:textColor="#fff"
+        android:background="@drawable/btn_green"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:id="@+id/tvError"
+        />
+</LinearLayout>

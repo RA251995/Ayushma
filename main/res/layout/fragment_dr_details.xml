@@ -1,0 +1,247 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ra.ayushma.DrDetailsFragment"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ivDetailsPic"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/pp"
+        app:civ_border_width="0dp"
+        app:civ_border_color="#FFF"
+        android:layout_gravity="center"
+        android:background="@drawable/dr_details_shape_bg"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:padding="9dp"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_weight="39"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="9dp">
+            <RatingBar
+                style="@style/customRatingBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3.5"
+                android:layout_gravity="center"
+                android:isIndicator="true"
+                android:id="@+id/rbDetails"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Name"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/tvDetailsName"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="MBBS MD"
+                android:gravity="center"
+                android:id="@+id/tvDetailsSpec"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Location"
+                android:gravity="center"
+                android:id="@+id/tvDetailsLoc"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="39"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Rs. 250"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/tvDetailsFee"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Chooose Date"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="9dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/llDate"
+        android:background="@drawable/et_bg"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="1 January 2017"
+            android:id="@+id/tvDate"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Chooose Location"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="9dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/llLoc"
+        android:background="@drawable/et_bg"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="Available Consulting Locations"
+            android:id="@+id/tvSelectLoc"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Select Time"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="9dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:weightSum="100"
+        >
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btn_white"
+            android:textColor="#fff"
+            android:text="10 AM"
+            android:textStyle="bold"
+            android:id="@+id/bTime10"
+            android:layout_weight="25"
+            android:minHeight="36dp"
+            android:minWidth="64dp"
+            android:layout_margin="9dp"
+            android:padding="9dp"/>
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btn_white"
+            android:textColor="#fff"
+            android:text="12 PM"
+            android:textStyle="bold"
+            android:id="@+id/bTime12"
+            android:layout_weight="25"
+            android:minHeight="36dp"
+            android:minWidth="64dp"
+            android:layout_marginRight="9dp"
+            android:padding="9dp"/>
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btn_white"
+            android:textColor="#fff"
+            android:text="2 PM"
+            android:textStyle="bold"
+            android:id="@+id/bTime2"
+            android:layout_weight="25"
+            android:minHeight="36dp"
+            android:minWidth="64dp"
+            android:layout_marginRight="9dp"
+            android:padding="9dp"/>
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btn_white"
+            android:textColor="#fff"
+            android:text="4 PM"
+            android:textStyle="bold"
+            android:id="@+id/bTime4"
+            android:layout_weight="25"
+            android:minHeight="36dp"
+            android:minWidth="64dp"
+            android:padding="9dp"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="BOOK NOW!"
+        android:textStyle="bold"
+        android:background="@drawable/btn_yellow"
+        android:layout_margin="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/bBook" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
